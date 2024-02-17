@@ -16,6 +16,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <!--Libreria per rating stars-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
@@ -25,10 +28,7 @@
                 <div class="container-fluid">
                   <img src="./assets/logo.svg" alt="logo">
                   <!--Droplinks-->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <div class="collapse navbar-collapse ms-2" id="navbarNavDropdown">
                     <ul class="navbar-nav">    
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,11 +73,18 @@
                     </ul>
                   </div>
                   <!--right section-->
-                  <div class="container">
-                    <div class="row images justify-content-end ">
-                        <div class="nav-image-left m-1 "></div>
-                        <div class="nav-image-left m-1"></div>
+                  <div class="mobile d-flex ">
+                    <div class="images justify-content-end d-flex me-2 ">
+                      <div class="nav-notification m-1 d-flex justify-content-center align-items-center">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                      </div>
+                      <div class="nav-image-profile m-1 d-flex justify-content-center ">
+                        <img src="./assets/avatar-1.jpg" alt="Profile Picture" >
+                      </div>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
                   </div>
                 </div>
               </nav>
@@ -85,58 +92,720 @@
 
         <main>
             <div class="hero container-fluid  ">
-                <div class="row justify-content-center align-items-center ">
-                    <div class="hero-info col-4 ">
+                <div class="hero-content row align-items-center justify-content-center ">
+                    <div class="hero-info col-lg-5 col-md-12 p-sm-4">
                         <h1 class="text-white ">Welcome Web Students!</h1>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa asperiores voluptates molestias rerum.</p>
-                        <button class="btn btn-success ">Browse Courses</button>
-                        <button class="btn btn-light ">Are You an Instructor?</button>
+                        <p class="p-hero col-lg-8">Hand-picked instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+                        <button class="btn btn-success btn-browse">Browse Courses</button>
+                        <button class="btn btn-light btn-instructor">Are You an Instructor?</button>
                     </div>
-                    <div class="hero-image col-4">
+                    <div class="hero-image col-lg-4 col-md-12 col-12 ">
                         <img src="./assets/hero-img.png" alt="immagine hero">
                     </div>
                 </div>
             </div>
             <div class="main-info container-fluid  ">
                 <div class="row justify-content-center ">
-                    <div class="info col-3 d-flex ">
-                        <div class="info-icon m-3 "></div>
-                        <div class="info-text">
-                            <h5>30.000 online courses</h5>
-                            <p>Enjoy a variety of fresh topics</p>
+                    <div class="info col-lg-3 col-md-12  d-flex align-items-center ">
+                        <div class="info-icon m-3 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="#C28153" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/><path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="#C28153" stroke-miterlimit="10" stroke-width="40"/></svg>
+                        </div>
+                        <div class="info-text  ">
+                            <h5 class="mb-0 h5-line-title">30.000 online courses</h5>
+                            <p class="mb-0 p-gray">Enjoy a variety of fresh topics</p>
                         </div>
                     </div>
-                    <div class="info col-3 d-flex ">
-                        <div class="info-icon m-3"></div>
+                    <div class="info col-lg-3 col-md-12  d-flex align-items-center ">
+                        <div class="info-icon m-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z" fill="none" stroke="#C28153" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/><path d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z" fill="none" stroke="#C28153" stroke-miterlimit="10" stroke-width="40"/><path d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z" fill="none" stroke="#C28153" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/><path d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154" fill="none" stroke="#C28153" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40"/></svg>
+                        </div>
                         <div class="info-text">
-                            <h5>30.000 online courses</h5>
-                            <p>Enjoy a variety of fresh topics</p>
+                            <h5 class="mb-0 h5-line-title">Expert instruction</h5>
+                            <p class="mb-0 p-gray">Fine the right istructor for you</p>
                         </div>
                     </div>
-                    <div class="info col-3 d-flex ">
-                        <div class="info-icon m-3"></div>
+                    <div class="info col-lg-3 col-md-12  d-flex align-items-center ">
+                        <div class="info-icon m-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="#C28153" stroke-miterlimit="10" stroke-width="40"/><path fill="none" stroke="#C28153" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M256 128v144h96"/></svg>
+                        </div>
                         <div class="info-text">
-                            <h5>30.000 online courses</h5>
-                            <p>Enjoy a variety of fresh topics</p>
+                            <h5 class="mb-0 h5-line-title">Lifetime access</h5>
+                            <p class="mb-0 p-gray">Learn on your schedule</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card-main-container container-fluid ">
-                <div class="recommended container ">
-                    <div class="row"></div>
+            <section class="card-main-container container-fluid pb-3 ">
+              
+                <!--RECOMMENDED-->
+                <div class="recommended container-fluid ">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="mb-4 container-title">Recommended to You</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!--inizio slideshow-->
+                  <div id="carouselExampleControls" class="carousel slide " data-ride="carousel"> 
+                      <div class="container">
+                        <div class="row gap-3 justify-content-center p-2 d-flex ">
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-graphql.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">GraphQL: introduction to graphQL for beginners</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-1 ms-5 me-1">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-javascript.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">A Complete Beginner's Guide to Javascript</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block  ">
+                            <img class="card-img-top" src="./assets/course-node.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Beginning Node.js, Express & Mongo DB Development</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block">
+                            <img class="card-img-top" src="./assets/course-laravel.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Laravel: The Ultimate Beginner's Guide To Learn</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+  
+                      <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                    </div>
                 </div>
-                <div class="popular container ">
-                    <div class="row"></div>
+                <!--POPULAR-->
+                <div class="popular container-fluid  ">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="mb-4 container-title">Most Popular</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!--inizio slideshow-->
+                  <div id="carouselExampleControls" class="carousel slide " data-ride="carousel"> 
+                      <div class="container">
+                        <div class="row gap-3 justify-content-center  p-2 d-flex ">
+              
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-html.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">HTML Full Course - Build a Website Tutorial</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-javascript.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">A Complete Beginner's Guide to Javascript</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block">
+                            <img class="card-img-top" src="./assets/course-node.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Beginning Node.js, Express & MongoDB Development</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block">
+                            <img class="card-img-top" src="./assets/course-react.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">How to easily create a website with React</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+  
+                      <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next  " href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>                  
+                    </div>
                 </div>
-                <div class="trending container ">
-                    <div class="row"></div>
+                
+                <!--TRENDING-->
+                <div class="trending container-fluid ">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="mb-4 container-title">Trending</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!--inizio slideshow-->
+                  <div id="carouselExampleControls" class="carousel slide " data-ride="carousel"> 
+                      <div class="container">
+                        <div class="row gap-3 justify-content-center  p-2 d-flex ">
+              
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-gatsby.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Revoluzionize how you build the web</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3">
+                            <img class="card-img-top" src="./assets/course-html.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">HTML Full Course - Build a Website Tutorial</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block">
+                            <img class="card-img-top" src="./assets/course-node.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Beginning Node.js, Express & MongoDB Development</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card p-0 col-6 col-md-4 col-lg-3 d-md-none d-none d-lg-block">
+                            <img class="card-img-top" src="./assets/course-laravel.jpg" alt="Graph Ql">
+                            <div class="card-body p-0 ">
+                              <h5 class="card-title ps-4 pt-4 ">Laravel: The Ultimate Beginner's Guide to Learn</h5>
+                              <div class="card-middle-info d-flex ps-4 align-items-center ">
+                                  <ion-icon name="time-outline"></ion-icon>
+                                  <p class="mb-0 ms-1 ">2h 40m</p>
+                                  <ion-icon name="stats-chart-outline" class="ms-2 "></ion-icon>
+                                  <p class="mb-0 ms-1">Advanced</p>
+                              </div>
+                              <div class="card-stars d-flex ps-4 align-items-center mt-3 mb-3">
+                                <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="stars-value ps-2 m-0 ">
+                                  <p class="stars-value mb-0 ">2.5</p>
+                                </div>
+                                <div class="feedback-count ps-2">
+                                  <p class="feedback-count mb-0 ">(1500)</p>
+                                </div>
+                              </div>
+                              <div class="card-prices d-flex align-items-center ps-4 ">
+                                <p class="new-price ">500$</p>
+                                <p class="old-price ps-1">600$</p>
+                              </div>
+                              <div class="card-bottom pt-2 ps-4  ">
+                                <div class="card-profile d-flex ">
+                                  <div class="card-profile-image">
+                                    <img src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                  </div>
+                                  <div class="card-profile-name ps-2 ">
+                                    <p class="card-profile-name mt-1  ">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="card-save mt-2 ms-5  ">
+                                    <div class="save-icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" stroke="#000" stroke-width="18px" d="M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z"/></svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+  
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    </div>
                 </div>
-            </div>
+
+              </section>
         </main>
 
         <footer>
-            <!-- place footer here -->
+          <div class="container footer">
+            <div class="row justify-content-between ">
+                <div class="copyright d-flex col-md-7 col-sm-12 ">
+                  <p>2022 Geeks. All Rights Reserved.</p>
+                </div>
+                <div class="footer-menu d-flex col-md-4 col-sm-12">
+                  <ul class="d-flex footer-menu-list justify-content-between ">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Feedback</li>
+                    <li>Support</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
         </footer>
 
         <!-- Bootstrap JavaScript Libraries -->
@@ -151,6 +820,10 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <!--IonIcons-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
         <script src="./js/script.js"></script>
     </body>
